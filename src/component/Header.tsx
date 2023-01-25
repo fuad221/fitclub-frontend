@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-// import { Link } from "react-scroll";
-import { Link } from 'react-router-dom'
-import Logo from "../../assets/logo.png";
-import Bars from "../../assets/bars.png";
+import { Link } from "react-scroll";
+// import { Link } from 'react-router-dom'
+import Logo from "../assets/logo.png";
+import Bars from "../assets/bars.png";
 import cm from './Header.module.css';
 
 

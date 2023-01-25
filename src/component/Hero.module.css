@@ -96,13 +96,13 @@
     font-weight: normal !important;
 }
 
-.hero_buttons> :nth-child(1) {
+.hero_buttons>:nth-child(1) {
     color: white;
     background-color: var(--orange);
     width: 8rem;
 }
 
-.hero_buttons> :nth-child(2) {
+.hero_buttons>:nth-child(2) {
     color: white;
     background-color: transparent;
     width: 8rem;
@@ -136,11 +136,11 @@
     width: 2rem;
 }
 
-.heart_rate> :nth-child(2) {
+.heart_rate>:nth-child(2) {
     color: var(--gray);
 }
 
-.heart_rate> :nth-child(3) {
+.heart_rate>:nth-child(3) {
     color: white;
     font-size: 1.5rem;
 }
@@ -149,7 +149,7 @@
     position: absolute;
     top: 10rem;
     right: 8rem;
-    width: 23rem;
+    width: 20rem;
 }
 
 .hero_image_back {
@@ -186,7 +186,7 @@
     color: var(--gray);
 }
 
-.calories>div> :nth-child(2) {
+.calories>div>:nth-child(2) {
     color: white;
     font-size: 1.5rem;
 }
@@ -220,7 +220,7 @@
         text-align: center;
     }
 
-    .hero-buttons {
+    .hero_buttons {
         justify-content: center;
     }
 
@@ -259,7 +259,7 @@
 
     .hero_image {
         position: relative;
-        width: 15rem;
+        width: 12rem;
         left: 7rem;
         top: 4rem;
         align-self: center;

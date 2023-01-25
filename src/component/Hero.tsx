@@ -1,11 +1,14 @@
 import React from 'react';
 import Header from './Header';
 import mc from './Hero.module.css';
-import hero_image from "../../assets/hero_image.png";
-import hero_image_back from "../../assets/hero_image_back.png";
-import Heart from "../../assets/heart.png";
-import Calories from "../../assets/calories.png";
+import clsx from 'clsx';
+import { Link } from 'react-scroll';
+import hero_image from "../assets/hero_image.png";
+import hero_image_back from "../assets/hero_image_back.png";
+import Heart from "../assets/heart.png";
+import Calories from "../assets/calories.png";
 import { motion } from 'framer-motion';
+
 
 
 const Hero = () => {
@@ -15,12 +18,12 @@ const Hero = () => {
 
     return (
         <div className={mc.hero}>
-            <div className="blur hero_blur"></div>
+            <div className={clsx([mc.blur], [mc.hero_blur])}></div>
 
-            <div className="left_h">
+            <div className={mc.left_h}>
                 <Header />
                 {/* the best ad */}
-                <div className="the_best_ad">
+                <div className={mc.the_best_ad}>
                     <motion.div
                         initial={{ left: mobile ? "178px" : '238px' }}
                         whileInView={{ left: "8px" }}
@@ -29,9 +32,9 @@ const Hero = () => {
                     <span>THE BEST FITNESS CLUB IN THE TOWN</span>
                 </div>
                 {/* Hero text */}
-                <div className="hero_text">
+                <div className={mc.hero_text}>
                     <div>
-                        <span className="stroke_text">Shape </span>
+                        <span className={mc.stroke_text}>Shape </span>
                         <span>Your</span>
                     </div>
                     <div>
@@ -45,7 +48,7 @@ const Hero = () => {
                     </div>
                 </div>
                 {/* experience figures */}
-                <div className="figures">
+                {/* <div className={mc.figures}>
                     <div>
                         <span>
                             <NumberCounter end={140} start={100} delay={4} preFix="+" />
@@ -64,18 +67,18 @@ const Hero = () => {
                         </span>
                         <span>fitness programs</span>
                     </div>
-                </div>
+                </div> */}
 
                 {/* hero buttons */}
-                <div className="hero-buttons">
-                    <button className="btn">Get Started</button>
-                    <button className="btn">Learn More</button>
+                <div className={mc.hero_buttons}>
+                    <button className={mc.btn}>Get Started</button>
+                    <button className={mc.btn}>Learn More</button>
                 </div>
             </div>
 
             {/* Right Side */}
-            <div className="right-h">
-                <button className="btn">
+            <div className={mc.right_h}>
+                <button className={mc.btn}>
                     <Link to='join-us' smooth={true} spy={true}>
                         Join Now
                     </Link>
@@ -86,7 +89,7 @@ const Hero = () => {
                     initial={{ right: "-1rem" }}
                     whileInView={{ right: "4rem" }}
                     transition={transition}
-                    className="heart-rate"
+                    className={mc.heart_rate}
                 >
                     <img src={Heart} alt="" />
                     <span>Heart Rate</span>
@@ -94,12 +97,12 @@ const Hero = () => {
                 </motion.div>
 
                 {/* hero images */}
-                <img className="hero-image" src={hero_image} alt="" />
+                <img className={mc.hero_image} src={hero_image} alt="" />
                 <motion.img
                     initial={{ right: "11rem" }}
                     whileInView={{ right: "20rem" }}
                     transition={transition}
-                    className="hero-image-back"
+                    className={mc.hero_image_back}
                     src={hero_image_back}
                     alt=""
                 />
@@ -109,7 +112,7 @@ const Hero = () => {
                     initial={{ right: "32rem" }}
                     whileInView={{ right: "28rem" }}
                     transition={transition}
-                    className="calories"
+                    className={mc.calories}
                 >
                     <img src={Calories} alt="" />
                     <div>
