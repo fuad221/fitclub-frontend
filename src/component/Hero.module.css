@@ -150,7 +150,7 @@
 
 .hero_image {
     position: absolute;
-    top: 10rem;
+    top: 20rem;
     right: 8rem;
     width: 20rem;
 }
@@ -182,7 +182,7 @@
 .calories>div {
     display: flex;
     flex-direction: column;
-    justify-content: space_between;
+    justify-content: space-between;
 }
 
 .calories>div> :nth-child(1) {
@@ -195,10 +195,6 @@
 }
 
 @media screen and (max-width: 768px) {
-    /* 
-    .hero_blur {
-        width: 14rem;
-    } */
 
     .hero {
         display: grid;

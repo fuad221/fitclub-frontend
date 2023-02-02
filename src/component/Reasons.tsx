@@ -14,10 +14,10 @@ const Reasons = () => {
     return (
         <div className={mc.Reasons} id='reasons'>
             <div className={mc.left_r}>
-                <img src={image1} alt="" />
-                <img src={image2} alt="" />
-                <img src={image3} alt="" />
-                <img src={image4} alt="" />
+                <img src={image1} className={mc.img1} alt="reason" />
+                <img src={image2}  className={mc.img2}alt="reason" />
+                <img src={image3}  className={mc.img3} alt="reason" />
+                <img src={image4} className={mc.img4} alt="reason" />
             </div>
             <div className={mc.right_r}>
                 <span>some reasons</span>

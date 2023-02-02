@@ -9,6 +9,11 @@ import cm from './Header.module.css';
 const Header = () => {
   const mobile = window.innerWidth <= 768 ? true : false;
   const [menuOpened, setMenuOpened] = useState(false);
+
+const headerArr = []
+
+
+
   return (
     <div className={cm.header} id="header">
       <img src={Logo} alt="" className={cm.logo} />
@@ -28,7 +33,7 @@ const Header = () => {
           <li>
             <Link
               onClick={() => setMenuOpened(false)}
-              // activeClass ="active"
+              activeClass ="active"
               to="header"
             >
               Home

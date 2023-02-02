@@ -18,7 +18,6 @@ const Hero = () => {
 
     return (
         <div className={mc.hero}>
-
             <div className={mc.left_h}>
                 <Header />
                 {/* the best ad */}

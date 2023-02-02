@@ -60,13 +60,17 @@
 }
 
 @media screen and (max-width: 767px) {
+    .Programs{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
     .programs_header {
         flex-direction: column;
         gap: 1rem;
         font-size: x-large;
         align-items: center;
         justify-content: center;
-        margin-top: 2rem;
+        margin-top: 6rem;
     }
     .program_categories {
        flex-direction: column;
