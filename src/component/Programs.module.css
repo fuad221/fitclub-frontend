@@ -16,7 +16,7 @@
     font-style: italic;
 }
 
-.prgoram_categories {
+.program_categories {
     display: flex;
     gap: 1rem;
 }
@@ -69,6 +69,7 @@
         margin-top: 2rem;
     }
     .program_categories {
-        flex-direction: column;
+       flex-direction: column;
+
     }
 }

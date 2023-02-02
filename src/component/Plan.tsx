@@ -1,4 +1,5 @@
 import React from "react";
+import Button from '../UI/Button'
 import mc from './Plan.module.css';
 import clsx from "clsx";
 import { plansData } from "../data/plansData";
@@ -20,7 +21,7 @@ const Plans = () => {
                     <div className={mc.plan} key={i}>
                         {plan.icon}
                         <span>{plan.name}</span>
-                        <span>$ {plan.price}</span>
+                        <span> {plan.price} €</span>
                         <div className={mc.features}>
                             {plan.features.map((feature, i) => (
                                 <div className={mc.feature}>
@@ -32,7 +33,7 @@ const Plans = () => {
                         <div>
                             <span>See more benefits</span>
                         </div>
-                        <button className={mc.btn}>Join now</button>
+                        <Button className={mc.btn}>Join now</Button>
                     </div>
                 ))}
             </div>

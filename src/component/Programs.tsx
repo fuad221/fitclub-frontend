@@ -6,6 +6,8 @@ import mc from './Programs.module.css';
 
 
 const Programs = () => {
+const hOver = { background: 'var(--planCard)', cursor: 'pointer'}
+
     return (
         <div className={mc.Programs} id='programs'>
 
@@ -18,10 +20,10 @@ const Programs = () => {
 
 
             {/* programs-categories */}
-            <div className={mc.prgoram_categories}>
+            <div className={mc.program_categories} >
                 {programsData.map((program) => (
                     <motion.div
-                        whileHover={{ background: 'var(--planCard)', cursor: 'pointer' }}
+                        whileHover={ hOver }
                         transition={{ type: 'spring' }}
                         className={mc.category}>
                         {program.image}
@@ -30,6 +32,7 @@ const Programs = () => {
                         <div className={mc.join_now}>
                             <span>Join Now</span>
                             <img src={RightArrow} alt="" />
+                            
                         </div>
                     </motion.div>
                 ))}

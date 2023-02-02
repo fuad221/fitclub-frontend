@@ -19,7 +19,7 @@
 }
 
 .hero_blur {
-    width: 22rem;
+    width: 5rem;
     height: 30rem;
     left: 0;
 }
@@ -64,7 +64,7 @@
 
 .hero_text>div:nth-of-type(3) {
     font-size: 1rem;
-    font-weight: 200;
+    font-weight: 400;
     text-transform: none;
     letter-spacing: 1px;
     width: 80%;
@@ -94,6 +94,9 @@
     display: flex;
     gap: 1rem;
     font-weight: normal !important;
+    height: 3rem;
+    ;
+    cursor: pointer;
 }
 
 .hero_buttons>:nth-child(1) {
@@ -192,12 +195,14 @@
 }
 
 @media screen and (max-width: 768px) {
-    .hero {
-        flex-direction: column;
-    }
-
+    /* 
     .hero_blur {
         width: 14rem;
+    } */
+
+    .hero {
+        display: grid;
+        grid-template-columns: 1rf;
     }
 
     .the_best_ad {
@@ -221,6 +226,7 @@
     }
 
     .hero_buttons {
+        display: inline-flex;
         justify-content: center;
     }
 

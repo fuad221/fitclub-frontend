@@ -18,14 +18,13 @@ const Hero = () => {
 
     return (
         <div className={mc.hero}>
-            <div className={clsx([mc.blur], [mc.hero_blur])}></div>
 
             <div className={mc.left_h}>
                 <Header />
                 {/* the best ad */}
                 <div className={mc.the_best_ad}>
                     <motion.div
-                        initial={{ left: mobile ? "178px" : '238px' }}
+                        initial={{ left: mobile ? "178px" : undefined }}
                         whileInView={{ left: "8px" }}
                         transition={{ ...transition, type: "tween" }}
                     ></motion.div>
